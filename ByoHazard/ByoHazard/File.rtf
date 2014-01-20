@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg932\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red92\green38\blue153;\red170\green13\blue145;\red63\green110\blue116;
+\red46\green13\blue110;\red0\green116\blue0;\red196\green26\blue22;\red28\green0\blue207;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab529
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 - (\cf2 NSFetchedResultsController\cf0  *)fetchedResultsController\
+\{\
+    \cf3 if\cf0  (\cf4 _fetchedResultsController\cf0  != \cf3 nil\cf0 ) \{\
+        \cf3 return\cf0  \cf4 _fetchedResultsController\cf0 ;\
+    \}\
+    \
+    \cf3 id\cf0  delegate = [[\cf2 UIApplication\cf0  \cf5 sharedApplication\cf0 ] \cf5 delegate\cf0 ];\
+    \cf3 self\cf0 .\cf4 managedObjectContext\cf0  = [delegate \cf5 managedObjectContext\cf0 ];\
+    \
+    \cf2 NSFetchRequest\cf0  *fetchRequest = [[\cf2 NSFetchRequest\cf0  \cf5 alloc\cf0 ] \cf5 init\cf0 ];\
+    \cf6 //Edit the entity name as appropriate.\cf0 \
+    \cf2 NSEntityDescription\cf0  *entity = [\cf2 NSEntityDescription\cf0  \cf5 entityForName\cf0 :\cf7 @"Event"\cf0  \cf5 inManagedObjectContext\cf0 :\cf3 self\cf0 .\cf4 managedObjectContext\cf0 ];\
+    [fetchRequest \cf5 setEntity\cf0 :entity];\
+    \
+    \cf6 // Set the batch size to a suitable number.\cf0 \
+    [fetchRequest \cf5 setFetchBatchSize\cf0 :\cf8 20\cf0 ];\
+    \
+    \cf6 // Edit the sort key as approproate.\cf0 \
+    \cf2 NSSortDescriptor\cf0  *sortDescriptor = [[\cf2 NSSortDescriptor\cf0  \cf5 alloc\cf0 ] \cf5 initWithKey\cf0 :\cf7 @"timeStamp"\cf0  \cf5 ascending\cf0 :\cf3 NO\cf0 ];\
+    \cf2 NSArray\cf0  *sortDescriptors = \cf8 @[\cf0 sortDescriptor\cf8 ]\cf0 ;\
+     \
+    [fetchRequest \cf5 setSortDescriptors\cf0 :sortDescriptors];\
+    \
+    \cf6 // Edit the section name key path and cache name if appropriate.\cf0 \
+    \cf6 // nil for section name key path means "no sections."\cf0 \
+    \cf2 NSFetchedResultsController\cf0  *aFetchedResultsController = [[\cf2 NSFetchedResultsController\cf0  \cf5 alloc\cf0 ] \cf5 initWithFetchRequest\cf0 :fetchRequest \cf5 managedObjectContext\cf0 :\cf3 self\cf0 .\cf4 managedObjectContext\cf0  \cf5 sectionNameKeyPath\cf0 :\cf3 nil\cf0  \cf5 cacheName\cf0 :\cf7 @"Master"\cf0 ];\
+    aFetchedResultsController.\cf2 delegate\cf0  = \cf3 self\cf0 ;\
+    \cf3 self\cf0 .\cf4 fetchedResultsController\cf0  = aFetchedResultsController;\
+    \
+    \cf2 NSError\cf0  *error = \cf3 nil\cf0 ;\
+    \cf3 if\cf0  (![\cf3 self\cf0 .\cf4 fetchedResultsController\cf0  \cf5 performFetch\cf0 :&error]) \{\
+        \cf6 // Replace this implementation with code to handle the error appropriately.\cf0 \
+        \cf6 // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.\cf0 \
+        \cf5 NSLog\cf0 (\cf7 @"Unresovled error %@, %@"\cf0 , error, [error \cf5 userInfo\cf0 ]);\
+        \cf5 abort\cf0 ();\
+    \}\
+    \
+    \cf3 return\cf0  \cf4 _fetchedResultsController\cf0 ;\
+\}}

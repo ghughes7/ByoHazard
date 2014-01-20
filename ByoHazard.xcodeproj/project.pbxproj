@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1902C17D185706E600986583 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1902C17C185706E600986583 /* CoreData.framework */; };
+		191914D4185ED08F006A8701 /* LevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 191914D3185ED08F006A8701 /* LevelViewController.m */; };
+		193F420F186C267B00535665 /* CreatedScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 193F420E186C267B00535665 /* CreatedScene.m */; };
+		19856F9918694E0800898267 /* SceneData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19856F9718694E0800898267 /* SceneData.xcdatamodeld */; };
+		199919DF184343EB00D6AC0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199919DE184343EB00D6AC0E /* Foundation.framework */; };
+		199919E1184343EB00D6AC0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199919E0184343EB00D6AC0E /* CoreGraphics.framework */; };
+		199919E3184343EB00D6AC0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199919E2184343EB00D6AC0E /* UIKit.framework */; };
+		199919E5184343EB00D6AC0E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199919E4184343EB00D6AC0E /* SpriteKit.framework */; };
+		199919EB184343EB00D6AC0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 199919E9184343EB00D6AC0E /* InfoPlist.strings */; };
+		199919ED184343EB00D6AC0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 199919EC184343EB00D6AC0E /* main.m */; };
+		199919F1184343EB00D6AC0E /* GSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 199919F0184343EB00D6AC0E /* GSAppDelegate.m */; };
+		199919F7184343EB00D6AC0E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 199919F6184343EB00D6AC0E /* RootViewController.m */; };
+		199919FA184343EB00D6AC0E /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 199919F9184343EB00D6AC0E /* GameScene.m */; };
+		199919FE184343EB00D6AC0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 199919FD184343EB00D6AC0E /* Images.xcassets */; };
+		19991A05184343EB00D6AC0E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19991A04184343EB00D6AC0E /* XCTest.framework */; };
+		19991A06184343EB00D6AC0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199919DE184343EB00D6AC0E /* Foundation.framework */; };
+		19991A07184343EB00D6AC0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199919E2184343EB00D6AC0E /* UIKit.framework */; };
+		19991A0F184343EB00D6AC0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19991A0D184343EB00D6AC0E /* InfoPlist.strings */; };
+		19991A11184343EB00D6AC0E /* ByoHazardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19991A10184343EB00D6AC0E /* ByoHazardTests.m */; };
+		19991A1C184344BC00D6AC0E /* RootScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 19991A1B184344BC00D6AC0E /* RootScreen.m */; };
+		199985C5187FBB1700202779 /* WinScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 199985C4187FBB1700202779 /* WinScreen.m */; };
+		199985CB187FE7B000202779 /* LoseScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 199985CA187FE7B000202779 /* LoseScreen.m */; };
+		199AC451184EF46D00DABC8B /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 199AC44D184EF46D00DABC8B /* spark.png */; };
+		199AC452184EF46D00DABC8B /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = 199AC44E184EF46D00DABC8B /* spark.sks */; };
+		199AC453184EF46D00DABC8B /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 199AC44F184EF46D00DABC8B /* Fire.sks */; };
+		199AC454184EF46D00DABC8B /* BallFlame.sks in Resources */ = {isa = PBXBuildFile; fileRef = 199AC450184EF46D00DABC8B /* BallFlame.sks */; };
+		199AC456184EF4C800DABC8B /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 199AC455184EF4C800DABC8B /* sprites.atlas */; };
+		199C2E1A187D25DA00CE0885 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199C2E19187D25D900CE0885 /* AudioToolbox.framework */; };
+		199C2E1C187D26C800CE0885 /* killSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 199C2E1B187D26C800CE0885 /* killSound.wav */; };
+		199E5BFB186AA012004E6ACF /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 199E5BF7186AA012004E6ACF /* Main.strings */; };
+		19A02D9318582B100014DCDE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A02D9218582B100014DCDE /* DetailViewController.m */; };
+		19A02D9618582BEF0014DCDE /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A02D9518582BEF0014DCDE /* MasterViewController.m */; };
+		19A0FECF1855579C0044A0BF /* RadioButtonSetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A0FECE1855579C0044A0BF /* RadioButtonSetController.m */; };
+		19B799E81864171400B0AF3A /* LevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 19B799E71864171400B0AF3A /* LevelScene.m */; };
+		19B961DE1862D0AE00BDB400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199919F2184343EB00D6AC0E /* Main.storyboard */; };
+		19E5D2D0184C6BC7000EA462 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E5D2CE184C6BC7000EA462 /* GameViewController.m */; };
+		19EAE3F9186A989400F44140 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19EAE3F7186A989400F44140 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19991A08184343EB00D6AC0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 199919D3184343EB00D6AC0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 199919DA184343EB00D6AC0E;
+			remoteInfo = ByoHazard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1902C17C185706E600986583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		190F22B4186AA330004CCCE2 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		191914D2185ED08F006A8701 /* LevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelViewController.h; sourceTree = "<group>"; };
+		191914D3185ED08F006A8701 /* LevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelViewController.m; sourceTree = "<group>"; };
+		193F420D186C267B00535665 /* CreatedScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatedScene.h; sourceTree = "<group>"; };
+		193F420E186C267B00535665 /* CreatedScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatedScene.m; sourceTree = "<group>"; };
+		19856F9818694E0800898267 /* SceneData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SceneData.xcdatamodel; sourceTree = "<group>"; };
+		199919DB184343EB00D6AC0E /* ByoHazard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByoHazard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		199919DE184343EB00D6AC0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		199919E0184343EB00D6AC0E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		199919E2184343EB00D6AC0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		199919E4184343EB00D6AC0E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		199919E8184343EB00D6AC0E /* ByoHazard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ByoHazard-Info.plist"; sourceTree = "<group>"; };
+		199919EA184343EB00D6AC0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; lineEnding = 0; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
+		199919EC184343EB00D6AC0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		199919EE184343EB00D6AC0E /* ByoHazard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ByoHazard-Prefix.pch"; sourceTree = "<group>"; };
+		199919EF184343EB00D6AC0E /* GSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAppDelegate.h; sourceTree = "<group>"; };
+		199919F0184343EB00D6AC0E /* GSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GSAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		199919F3184343EB00D6AC0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		199919F5184343EB00D6AC0E /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		199919F6184343EB00D6AC0E /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		199919F8184343EB00D6AC0E /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		199919F9184343EB00D6AC0E /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		199919FD184343EB00D6AC0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		19991A03184343EB00D6AC0E /* ByoHazardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ByoHazardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19991A04184343EB00D6AC0E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		19991A0C184343EB00D6AC0E /* ByoHazardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ByoHazardTests-Info.plist"; sourceTree = "<group>"; };
+		19991A0E184343EB00D6AC0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; lineEnding = 0; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
+		19991A10184343EB00D6AC0E /* ByoHazardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ByoHazardTests.m; sourceTree = "<group>"; };
+		19991A1A184344BC00D6AC0E /* RootScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootScreen.h; sourceTree = "<group>"; };
+		19991A1B184344BC00D6AC0E /* RootScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootScreen.m; sourceTree = "<group>"; };
+		199985C3187FBB1700202779 /* WinScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinScreen.h; sourceTree = "<group>"; };
+		199985C4187FBB1700202779 /* WinScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinScreen.m; sourceTree = "<group>"; };
+		199985C9187FE7B000202779 /* LoseScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoseScreen.h; sourceTree = "<group>"; };
+		199985CA187FE7B000202779 /* LoseScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoseScreen.m; sourceTree = "<group>"; };
+		199AC44D184EF46D00DABC8B /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		199AC44E184EF46D00DABC8B /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
+		199AC44F184EF46D00DABC8B /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
+		199AC450184EF46D00DABC8B /* BallFlame.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallFlame.sks; sourceTree = "<group>"; };
+		199AC455184EF4C800DABC8B /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		199C2E17187D243500CE0885 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		199C2E19187D25D900CE0885 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		199C2E1B187D26C800CE0885 /* killSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = killSound.wav; sourceTree = "<group>"; };
+		199E5BF8186AA012004E6ACF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Main.strings; sourceTree = "<group>"; };
+		19A02D9118582B100014DCDE /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		19A02D9218582B100014DCDE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		19A02D9418582BEF0014DCDE /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		19A02D9518582BEF0014DCDE /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MasterViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		19A0FECD1855579C0044A0BF /* RadioButtonSetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioButtonSetController.h; sourceTree = "<group>"; };
+		19A0FECE1855579C0044A0BF /* RadioButtonSetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioButtonSetController.m; sourceTree = "<group>"; };
+		19B799E61864171400B0AF3A /* LevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelScene.h; sourceTree = "<group>"; };
+		19B799E71864171400B0AF3A /* LevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelScene.m; sourceTree = "<group>"; };
+		19CF1F18186AA1C100262779 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		19CF1F19186AA1C700262779 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19E5D2CD184C6BC7000EA462 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		19E5D2CE184C6BC7000EA462 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		19EAE3F8186A989400F44140 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		199919D8184343EB00D6AC0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199C2E1A187D25DA00CE0885 /* AudioToolbox.framework in Frameworks */,
+				1902C17D185706E600986583 /* CoreData.framework in Frameworks */,
+				199919E1184343EB00D6AC0E /* CoreGraphics.framework in Frameworks */,
+				199919E3184343EB00D6AC0E /* UIKit.framework in Frameworks */,
+				199919E5184343EB00D6AC0E /* SpriteKit.framework in Frameworks */,
+				199919DF184343EB00D6AC0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19991A00184343EB00D6AC0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19991A05184343EB00D6AC0E /* XCTest.framework in Frameworks */,
+				19991A07184343EB00D6AC0E /* UIKit.framework in Frameworks */,
+				19991A06184343EB00D6AC0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1902C17E1857089300986583 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19856F9718694E0800898267 /* SceneData.xcdatamodeld */,
+				193F420D186C267B00535665 /* CreatedScene.h */,
+				193F420E186C267B00535665 /* CreatedScene.m */,
+				19991A1D18434E8300D6AC0E /* Resources */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1902C17F185708AF00986583 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				199919F2184343EB00D6AC0E /* Main.storyboard */,
+				19B799E61864171400B0AF3A /* LevelScene.h */,
+				19B799E71864171400B0AF3A /* LevelScene.m */,
+				199919F8184343EB00D6AC0E /* GameScene.h */,
+				199919F9184343EB00D6AC0E /* GameScene.m */,
+				19991A1A184344BC00D6AC0E /* RootScreen.h */,
+				19991A1B184344BC00D6AC0E /* RootScreen.m */,
+				199985C3187FBB1700202779 /* WinScreen.h */,
+				199985C4187FBB1700202779 /* WinScreen.m */,
+				199985C9187FE7B000202779 /* LoseScreen.h */,
+				199985CA187FE7B000202779 /* LoseScreen.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1902C180185708E000986583 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				199919EF184343EB00D6AC0E /* GSAppDelegate.h */,
+				199919F0184343EB00D6AC0E /* GSAppDelegate.m */,
+				199919F5184343EB00D6AC0E /* RootViewController.h */,
+				199919F6184343EB00D6AC0E /* RootViewController.m */,
+				19A02D9418582BEF0014DCDE /* MasterViewController.h */,
+				19A02D9518582BEF0014DCDE /* MasterViewController.m */,
+				19A02D9118582B100014DCDE /* DetailViewController.h */,
+				19A02D9218582B100014DCDE /* DetailViewController.m */,
+				19E5D2CD184C6BC7000EA462 /* GameViewController.h */,
+				19E5D2CE184C6BC7000EA462 /* GameViewController.m */,
+				191914D2185ED08F006A8701 /* LevelViewController.h */,
+				191914D3185ED08F006A8701 /* LevelViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		199919D2184343EB00D6AC0E = {
+			isa = PBXGroup;
+			children = (
+				199919E6184343EB00D6AC0E /* ByoHazard */,
+				19991A0A184343EB00D6AC0E /* ByoHazardTests */,
+				199919DD184343EB00D6AC0E /* Frameworks */,
+				199919DC184343EB00D6AC0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		199919DC184343EB00D6AC0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				199919DB184343EB00D6AC0E /* ByoHazard.app */,
+				19991A03184343EB00D6AC0E /* ByoHazardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		199919DD184343EB00D6AC0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				199C2E19187D25D900CE0885 /* AudioToolbox.framework */,
+				199C2E17187D243500CE0885 /* AVFoundation.framework */,
+				1902C17C185706E600986583 /* CoreData.framework */,
+				199919DE184343EB00D6AC0E /* Foundation.framework */,
+				199919E0184343EB00D6AC0E /* CoreGraphics.framework */,
+				199919E2184343EB00D6AC0E /* UIKit.framework */,
+				199919E4184343EB00D6AC0E /* SpriteKit.framework */,
+				19991A04184343EB00D6AC0E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		199919E6184343EB00D6AC0E /* ByoHazard */ = {
+			isa = PBXGroup;
+			children = (
+				1902C180185708E000986583 /* Controller */,
+				1902C17F185708AF00986583 /* View */,
+				1902C17E1857089300986583 /* Model */,
+				199919E7184343EB00D6AC0E /* Supporting Files */,
+			);
+			path = ByoHazard;
+			sourceTree = "<group>";
+		};
+		199919E7184343EB00D6AC0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				199C2E1B187D26C800CE0885 /* killSound.wav */,
+				199E5BF7186AA012004E6ACF /* Main.strings */,
+				199919E9184343EB00D6AC0E /* InfoPlist.strings */,
+				19EAE3F7186A989400F44140 /* Localizable.strings */,
+				19A0FECD1855579C0044A0BF /* RadioButtonSetController.h */,
+				19A0FECE1855579C0044A0BF /* RadioButtonSetController.m */,
+				199919E8184343EB00D6AC0E /* ByoHazard-Info.plist */,
+				199919EC184343EB00D6AC0E /* main.m */,
+				199919EE184343EB00D6AC0E /* ByoHazard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19991A0A184343EB00D6AC0E /* ByoHazardTests */ = {
+			isa = PBXGroup;
+			children = (
+				19991A10184343EB00D6AC0E /* ByoHazardTests.m */,
+				19991A0B184343EB00D6AC0E /* Supporting Files */,
+			);
+			path = ByoHazardTests;
+			sourceTree = "<group>";
+		};
+		19991A0B184343EB00D6AC0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19991A0C184343EB00D6AC0E /* ByoHazardTests-Info.plist */,
+				19991A0D184343EB00D6AC0E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19991A1D18434E8300D6AC0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				199AC44C184EF42A00DABC8B /* Particles */,
+				199AC455184EF4C800DABC8B /* sprites.atlas */,
+				199919FD184343EB00D6AC0E /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		199AC44C184EF42A00DABC8B /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				199AC44D184EF46D00DABC8B /* spark.png */,
+				199AC44E184EF46D00DABC8B /* spark.sks */,
+				199AC44F184EF46D00DABC8B /* Fire.sks */,
+				199AC450184EF46D00DABC8B /* BallFlame.sks */,
+			);
+			name = Particles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		199919DA184343EB00D6AC0E /* ByoHazard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19991A14184343EB00D6AC0E /* Build configuration list for PBXNativeTarget "ByoHazard" */;
+			buildPhases = (
+				199919D7184343EB00D6AC0E /* Sources */,
+				199919D8184343EB00D6AC0E /* Frameworks */,
+				199919D9184343EB00D6AC0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ByoHazard;
+			productName = ByoHazard;
+			productReference = 199919DB184343EB00D6AC0E /* ByoHazard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19991A02184343EB00D6AC0E /* ByoHazardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19991A17184343EB00D6AC0E /* Build configuration list for PBXNativeTarget "ByoHazardTests" */;
+			buildPhases = (
+				199919FF184343EB00D6AC0E /* Sources */,
+				19991A00184343EB00D6AC0E /* Frameworks */,
+				19991A01184343EB00D6AC0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19991A09184343EB00D6AC0E /* PBXTargetDependency */,
+			);
+			name = ByoHazardTests;
+			productName = ByoHazardTests;
+			productReference = 19991A03184343EB00D6AC0E /* ByoHazardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		199919D3184343EB00D6AC0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = goodsmile;
+				TargetAttributes = {
+					19991A02184343EB00D6AC0E = {
+						TestTargetID = 199919DA184343EB00D6AC0E;
+					};
+				};
+			};
+			buildConfigurationList = 199919D6184343EB00D6AC0E /* Build configuration list for PBXProject "ByoHazard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 199919D2184343EB00D6AC0E;
+			productRefGroup = 199919DC184343EB00D6AC0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				199919DA184343EB00D6AC0E /* ByoHazard */,
+				19991A02184343EB00D6AC0E /* ByoHazardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		199919D9184343EB00D6AC0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B961DE1862D0AE00BDB400 /* Main.storyboard in Resources */,
+				199AC456184EF4C800DABC8B /* sprites.atlas in Resources */,
+				199AC452184EF46D00DABC8B /* spark.sks in Resources */,
+				199C2E1C187D26C800CE0885 /* killSound.wav in Resources */,
+				199919EB184343EB00D6AC0E /* InfoPlist.strings in Resources */,
+				199AC451184EF46D00DABC8B /* spark.png in Resources */,
+				199919FE184343EB00D6AC0E /* Images.xcassets in Resources */,
+				199AC454184EF46D00DABC8B /* BallFlame.sks in Resources */,
+				199E5BFB186AA012004E6ACF /* Main.strings in Resources */,
+				199AC453184EF46D00DABC8B /* Fire.sks in Resources */,
+				19EAE3F9186A989400F44140 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19991A01184343EB00D6AC0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19991A0F184343EB00D6AC0E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		199919D7184343EB00D6AC0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19A0FECF1855579C0044A0BF /* RadioButtonSetController.m in Sources */,
+				199919FA184343EB00D6AC0E /* GameScene.m in Sources */,
+				19856F9918694E0800898267 /* SceneData.xcdatamodeld in Sources */,
+				19991A1C184344BC00D6AC0E /* RootScreen.m in Sources */,
+				199919F1184343EB00D6AC0E /* GSAppDelegate.m in Sources */,
+				199919F7184343EB00D6AC0E /* RootViewController.m in Sources */,
+				193F420F186C267B00535665 /* CreatedScene.m in Sources */,
+				19A02D9318582B100014DCDE /* DetailViewController.m in Sources */,
+				19B799E81864171400B0AF3A /* LevelScene.m in Sources */,
+				19A02D9618582BEF0014DCDE /* MasterViewController.m in Sources */,
+				199985CB187FE7B000202779 /* LoseScreen.m in Sources */,
+				199985C5187FBB1700202779 /* WinScreen.m in Sources */,
+				19E5D2D0184C6BC7000EA462 /* GameViewController.m in Sources */,
+				191914D4185ED08F006A8701 /* LevelViewController.m in Sources */,
+				199919ED184343EB00D6AC0E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		199919FF184343EB00D6AC0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19991A11184343EB00D6AC0E /* ByoHazardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19991A09184343EB00D6AC0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 199919DA184343EB00D6AC0E /* ByoHazard */;
+			targetProxy = 19991A08184343EB00D6AC0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		199919E9184343EB00D6AC0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				199919EA184343EB00D6AC0E /* en */,
+				19CF1F19186AA1C700262779 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		199919F2184343EB00D6AC0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				199919F3184343EB00D6AC0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19991A0D184343EB00D6AC0E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19991A0E184343EB00D6AC0E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		199E5BF7186AA012004E6ACF /* Main.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				199E5BF8186AA012004E6ACF /* en */,
+				190F22B4186AA330004CCCE2 /* ja */,
+			);
+			name = Main.strings;
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		19EAE3F7186A989400F44140 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19EAE3F8186A989400F44140 /* en */,
+				19CF1F18186AA1C100262779 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19991A12184343EB00D6AC0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		19991A13184343EB00D6AC0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19991A15184343EB00D6AC0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ByoHazard/ByoHazard-Prefix.pch";
+				INFOPLIST_FILE = "ByoHazard/ByoHazard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		19991A16184343EB00D6AC0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ByoHazard/ByoHazard-Prefix.pch";
+				INFOPLIST_FILE = "ByoHazard/ByoHazard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		19991A18184343EB00D6AC0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ByoHazard.app/ByoHazard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ByoHazard/ByoHazard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ByoHazardTests/ByoHazardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		19991A19184343EB00D6AC0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ByoHazard.app/ByoHazard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ByoHazard/ByoHazard-Prefix.pch";
+				INFOPLIST_FILE = "ByoHazardTests/ByoHazardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		199919D6184343EB00D6AC0E /* Build configuration list for PBXProject "ByoHazard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19991A12184343EB00D6AC0E /* Debug */,
+				19991A13184343EB00D6AC0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19991A14184343EB00D6AC0E /* Build configuration list for PBXNativeTarget "ByoHazard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19991A15184343EB00D6AC0E /* Debug */,
+				19991A16184343EB00D6AC0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19991A17184343EB00D6AC0E /* Build configuration list for PBXNativeTarget "ByoHazardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19991A18184343EB00D6AC0E /* Debug */,
+				19991A19184343EB00D6AC0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		19856F9718694E0800898267 /* SceneData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				19856F9818694E0800898267 /* SceneData.xcdatamodel */,
+			);
+			currentVersion = 19856F9818694E0800898267 /* SceneData.xcdatamodel */;
+			path = SceneData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 199919D3184343EB00D6AC0E /* Project object */;
+}
